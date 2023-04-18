@@ -52,7 +52,6 @@ function drawBasic() {
         format: "decimal"
       },
       height: 400,
-      legend: bottom,
       width:'100%',
         colors: ["#f8d62b","red"]
 
@@ -138,8 +137,8 @@ function drawBasic() {
         title: '',
         pieHole: 0.4,
         width:'100%',
+        height: 440,
         legend: 'bottom',
-        height: 400,
         colors: ["#f8d62b", "#a927f9", "#51bb25", "#d64c1e"]
       };
       var chart = new google.visualization.PieChart(document.getElementById('pie-chart3'));
@@ -150,15 +149,17 @@ function drawBasic() {
       ['Task', 'Hours per Day'],
       ['Logged In User',     100],
       ['Active User',     70],
+      ['Inactive User',     20],
       ['Guest User',  132]
     ]);
     var options = {
       title: '',
       pieHole: 0.4,
       width:'100%',
+      height: 440,
       legend: 'bottom',
-      height: 400,
-      colors: ["#f8d62b", "#a927f9", "#51bb25"]
+      colors: ["#ffc107", "#198754", "#dc3545", "#0d6efd"]
+      // colors: ["#ffc107", "#198754", "#198754", "#dc3545"]
     };
     var chart = new google.visualization.PieChart(document.getElementById('pie-Userss'));
     chart.draw(data, options);

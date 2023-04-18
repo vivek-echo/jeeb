@@ -5905,6 +5905,11 @@ table.dataTable.display tbody tr.odd > .sorting_1 {
   background-color: #0077B5;
 }
 
+.w-h-16 {
+  width: 16px;
+  height: 16px;
+}
+
 .form-inline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9799,7 +9804,8 @@ input[type=file] {
   text-align: center;
   padding: 10px 25px;
   border: none;
-  border-bottom: none;
+  /* border-bottom: none; */
+  border-bottom: 2px solid #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -10079,7 +10085,8 @@ input[type=file] {
   float: right;
 }
 .tabbed-card ul.border-tab.nav-tabs .nav-item .nav-link {
-  padding: 22px 15px;
+  /* padding: 22px 15px; */
+  padding: 18px 8px 2px;
 }
 
 /**=====================
